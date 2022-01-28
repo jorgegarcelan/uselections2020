@@ -1,38 +1,3 @@
----
-title: "Supervised Learning project - 2020 Elections in the US"
-subtitle: "Statistical Learning - UC3M"
-author: "Jorge Garcelán Gómez"
-date: "10/11/2021"
-output: 
-  html_document: 
-    df_print: kable
-    theme: readable
-    code_folding: show
-    number_sections: yes
-    toc: yes
-    toc_float:
-      collapsed: yes
-      smooth_scroll: no
-    fig_width: 10
-    fig_height: 8
-editor_options:
-  chunk_output_type: console
----
-
-```{r global_options, include=T, echo = F}
-knitr::opts_chunk$set(echo = T, warning=FALSE, message=FALSE)
-```
-
-```{r echo=FALSE}
-setwd("C:/Users/jorge/Desktop/UNI/2-SEGUNDO/2-1-STATISTICS/HOMEWORK/2-SUPERVISED_LEARNING/Homework")
-```
-
-
-```{r echo=FALSE}
-# clean the workspace:
-rm(list=ls())
-```
-
 The objective of this project is to analyze "a posteriori" the results of the 2020 US Presidential Elections, by using supervised learning techniques that can be grouped in two main families: Classification and Regression.  
 
 In **classification** the approach is going to be to predict the winner of each US county. However, the motivation in **regression** is going to be to predict in a rough way the winner of the presidential elections. by predicting the percentage of votes for each candidate in each county and then for each state.   
